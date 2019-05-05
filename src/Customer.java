@@ -2,7 +2,7 @@ import java.util.*;
 
 class Customer {
     private String name;
-    private ArrayList rentals = new ArrayList();
+    private ArrayList<Rental> rentals = new ArrayList<Rental>();
     public Customer (String newname){
         name = newname;
     }
