@@ -2,12 +2,12 @@ import java.util.*;
 
 class Customer {
     private String name;
-    private Vector rentals = new Vector();
+    private ArrayList rentals = new ArrayList();
     public Customer (String newname){
         name = newname;
     }
     public void addRental(Rental arg) {
-        rentals.addElement(arg);
+        rentals.add(arg);
     }
     public String getName (){
         return name;
@@ -15,7 +15,7 @@ class Customer {
     public String statement() {
         double totalAmount = 0;
         int frequentRenterPoints = 0;
-        Enumeration enum_rentals = rentals.elements();	    
+        Enumeration enum_rentals = Collections.enumeration(rentals);	    
         String result = "Rental Record for " + this.getName() + "\n";
         result += "\t" + "Title" + "\t" + "\t" + "Days" + "\t" + "Amount" + "\n";
 
