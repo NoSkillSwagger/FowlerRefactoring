@@ -30,6 +30,5 @@ class myTests {
                 "You earned 3 frequent renter points";
         String result = c1.statement();
         Assertions.assertEquals(expected, result);
-
     }
 }
